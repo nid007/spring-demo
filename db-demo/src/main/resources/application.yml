@@ -1,0 +1,17 @@
+server:
+  port: 8010
+
+spring:
+  application:
+    name: db-demo
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/test
+    driver-class-name: org.mariadb.jdbc.Driver
+    username: _cipher_27a2251a15c98aeeb6518edb7edae61a
+    password:
+    type: com.alibaba.druid.pool.DruidDataSource
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  typeAliasesPackage: my.demo.entity
+  config-location: classpath:myBatis-config.xml

@@ -31,10 +31,8 @@ public class GatewayApplication {
     @Bean
     public RouteLocator myRoutes(RouteLocatorBuilder builder) {
         return builder.routes()
-                .route(p -> p
-                        .path("/get")
-                        .filters(f -> f.addRequestHeader("token", "World"))
-                        .uri("http://localhost:8762/hi"))
+                .route("path_route", r -> r.path("/get")
+                        .uri("http://www.baidu.com/"))
                 .build();
     }
 }
