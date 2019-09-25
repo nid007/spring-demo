@@ -18,6 +18,7 @@
     <module>gateway</module>
     <module>docker</module>
     <module>db-demo</module>
+    <module>mq</module>
   </modules>
   <parent>
     <groupId>org.springframework.boot</groupId>
